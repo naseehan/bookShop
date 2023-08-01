@@ -1,0 +1,125 @@
+.details-section {
+  display: grid;
+  gap: 1rem;
+}
+/* search style */
+.search {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+}
+.search input {
+  border-radius: 3px;
+  border: 1px solid #b8afaf;
+  padding: 9px 11px;
+}
+.search i {
+  cursor: pointer;
+}
+
+/* hero section */
+.trending {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 2rem;
+}
+.trending .star1 {
+  top: 4rem;
+  position: relative;
+  right: 36rem;
+}
+.trending .star2 {
+  top: 13rem;
+  position: relative;
+  left: 31rem;
+}
+.trending h1 {
+  font-size: 3rem;
+}
+.trending p {
+  font-size: 1.2rem;
+  color: #8c7e7e;
+}
+.trending button {
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border: 1px solid #0d1317;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: 600;
+}
+.trending button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* books section */
+.books {
+  display: flex;
+  justify-content: space-around;
+  background-color: #eeeff0;
+  padding: 8rem;
+}
+.books .commen img {
+  width: 10rem;
+}
+.books .commen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 9px;
+}
+.books .book1:nth-child(2) img {
+  height: 160px;
+}
+.book1,
+.book3 {
+  background-color: #c3ccd3;
+}
+.book2 {
+  background-color: #f0dee1;
+}
+.books .commen button {
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #0d1317;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.books .commen button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+  .trending {
+    display: grid;
+    padding: 1rem;
+    width: fit-content;
+    text-align: center;
+  }
+  .trending h1 {
+    font-size: 2.46rem;
+  }
+  .books {
+    width: 366px;
+    gap: 1rem;
+    display: grid;
+    padding: 1rem;
+  }
+  .books .commen {
+    align-items: center;
+    display: grid;
+    width: fit-content;
+  }
+  .search {
+    justify-content: center;
+  }
+}

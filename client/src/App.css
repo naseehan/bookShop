@@ -1,0 +1,12 @@
+.App{
+  padding: 0 5rem;
+  display: grid;
+}
+
+/* for mobile */
+
+@media only screen and (max-width: 1200px) {
+  .App{
+    padding: 0;
+  }
+}

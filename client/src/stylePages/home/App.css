@@ -1,0 +1,44 @@
+.home-section{
+    display: flex;
+    justify-content: space-around;
+    background-color: #efefef;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 101px;
+    text-align: center;
+}
+.header{
+    text-align: center;
+}
+.hero-text .header h1{
+    font-size: 4rem;
+}
+.sub-header p {
+    font-size: 1.2rem;
+    color: #554e4e;
+}
+.home-section .hero-text .explore button{
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #0d1317;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.home-section .hero-text .explore button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* for mobile */
+
+@media only screen and (max-width:1200px) {
+    .home-section{
+        display: grid;
+        min-width: 300px;
+    }
+}
